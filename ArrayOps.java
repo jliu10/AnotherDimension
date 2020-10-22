@@ -22,4 +22,13 @@ public class ArrayOps{
   public static int sum(int[][] arr){
     return 0;
   }
+  public static boolean isRowMagic(int[][] matrix){
+    return false;
+  }
+  public static boolean isColMagic(int[][] matrix){
+    return false;
+  }
+  public static boolean isLocationMagic(int[][] matrix, int row, int col){
+    return false;
+  }
 }
