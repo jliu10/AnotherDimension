@@ -7,7 +7,9 @@ public class ArrayOps{
     return sum;
   }
   public static int largest(int[] arr){
-    return 0;
+    int max=arr[0];
+    
+    return max;
   }
   public static int[] sumRows(int[][] matrix){
     return matrix[0];
