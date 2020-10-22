@@ -14,13 +14,20 @@ public class ArrayOps{
     return max;
   }
   public static int[] sumRows(int[][] matrix){
-    return matrix[0];
+    int[]result=new int[matrix.length];
+    for(int i=0;i<matrix.length;i++){
+      result[i]=sum(matrix[i]);
+    }
+    return result;
   }
   public static int[] largestInRows(int[][] matrix){
     return matrix[0];
   }
   public static int sum(int[][] arr){
     return 0;
+  }
+  public static int[] sumCols(int[][] matrix){
+    return matrix[0];
   }
   public static boolean isRowMagic(int[][] matrix){
     return false;
