@@ -44,13 +44,16 @@ public class ArrayOps{
   }
   public static boolean isRowMagic(int[][] matrix){
     if(matrix.length<=1) return true;
-    int match=sum(matrix[0]);
-    for(int i=0;i<matrix.length;i++){
-      if(sum(matrix[i])!=match) return false;
+    int[]sums=sumRows(matrix);
+    int match=sums[0];
+    for(int i=0;i<sums.length;i++){
+      if(sums[i]!=match) return false;
     }
     return true;
   }
   public static boolean isColMagic(int[][] matrix){
+    if(matrix.length==0) return true;
+    if(matrix[0].length<=1) return true;
     return false;
   }
   public static boolean isLocationMagic(int[][] matrix, int row, int col){
