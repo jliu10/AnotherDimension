@@ -28,7 +28,8 @@ public class ArrayOps{
     return result;
   }
   public static int sum(int[][] arr){
-    return 0;
+    int result=sum(sumRows(arr));
+    return result;
   }
   public static int[] sumCols(int[][] matrix){
     return matrix[0];
