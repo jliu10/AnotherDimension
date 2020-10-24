@@ -32,7 +32,15 @@ public class ArrayOps{
     return result;
   }
   public static int[] sumCols(int[][] matrix){
-    return matrix[0];
+    int[]result=new int[matrix[0].length];
+    for(int i=0;i<matrix[0].length;i++){
+      int sum=0;
+      for(int j=0;j<matrix.length;j++){
+        sum+=matrix[j][i];
+      }
+      result[i]+=sum;
+    }
+    return result;
   }
   public static boolean isRowMagic(int[][] matrix){
     return false;
