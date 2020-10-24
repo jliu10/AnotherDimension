@@ -43,7 +43,12 @@ public class ArrayOps{
     return result;
   }
   public static boolean isRowMagic(int[][] matrix){
-    return false;
+    if(matrix.length<=1) return true;
+    int match=sum(matrix[0]);
+    for(int i=0;i<matrix.length;i++){
+      if(sum(matrix[i])!=match) return false;
+    }
+    return true;
   }
   public static boolean isColMagic(int[][] matrix){
     return false;
