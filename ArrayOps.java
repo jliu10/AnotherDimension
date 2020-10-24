@@ -21,7 +21,11 @@ public class ArrayOps{
     return result;
   }
   public static int[] largestInRows(int[][] matrix){
-    return matrix[0];
+    int[]result=new int[matrix.length];
+    for(int i=0;i<matrix.length;i++){
+      result[i]=largest(matrix[i]);
+    }
+    return result;
   }
   public static int sum(int[][] arr){
     return 0;
