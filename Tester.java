@@ -56,5 +56,6 @@ public class Tester{
     System.out.println(ArrayOps.isLocationMagic(E,1,1));
     //  expected: true
     System.out.println(ArrayOps.isRowMagic(arr2Empty));
+    System.out.println(ArrayOps.isColMagic(arr2Empty));
   }
 }
